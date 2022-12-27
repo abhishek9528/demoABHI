@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Massage</title>
+    <style>
+            body{
+    /* background-image: url(./images/643363.jpg); */
+    background-size: cover;
+}
+.box{
+    width: 30%;
+    height: 350px;
+    background-color: rgba(110, 110, 184, 0.567);
+    margin:180px auto;
+}
+.head{
+    /* background-color: blue; */
+    line-height: 60px;
+    font-weight: 100;
+    letter-spacing: 2px;
+    padding-left: 15px ;
+}
+.box .login-box{
+    width: 100%;
+    height: 200px;
+    /* backgrounywood; */
+    padding: 15px;
+    box-sizing : border-box;
+}
+.login-box .form-box{
+    width: 100%;
+    height: 60px;
+    /* background-color: springgreen; */
+    
+}
+.form-box label{
+    /* background-color:yellow; */
+    display: block;
+    padding: 3px;
+}
+.form-box input[type=text]{
+    /* border: 1px solid #000; */
+    width: 100%;
+    box-sizing: border-box;
+    height: 30px;
+    padding: 10px;
+    outline: none;
+}
+.form-box input[type=number]{
+    width: 100%;
+    height: 30px;
+    box-sizing: border-box;
+    outline: none;
+    padding: 10px;
+    
+}
+.form-box input[type=text]:focus{
+    border-color: #0f0;
+}
+.form-box input[type=submit]{
+    border: 2px solid #000;
+    background-color: rgb(18,95,92);
+    height: 40px;
+    width: 30%;
+    color: #fff;
+    cursor: pointer;
+}
+.form-box input[type=button]:hover{
+    background-color: rgb(21, 67, 24);
+    box-shadow: 0px 6px 5px rgb(0,0,0,0.2);
+}
+.form-box input[type=button]:active{
+    background-color: rgb(19,77,75);
+    box-shadow: inset 0px 0px 5px (0,0,0,0.5);
+}
+.box .other-login{
+    width: 100%;
+    background-color: skyblue0;
+    height: 30px;
+    text-align: center;
+    line-height: 50px;
+}
+.box .other-login .social{
+    background-color: rgb(13,95,92);
+    display: inline;
+    padding: 10px;
+    text-decoration: none;
+    color: #fff;
+    box-shadow: 0px 0px 3px #000;
+}
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="head">
+            <h1>SMS SEND</h1>
+        </div>
+        <form action="/message" method="post">
+            <div class="login-box">
+            <div class="form-box">
+                <label for="User">Enter Message</label>
+                <input type="text" name="user" id="User">
+            </div>
+            <div class="form-box">
+                <label for="number">Enter Number</label>
+                <input type="number" name="number" id="">
+            </div>
+            <div class="form-box">
+                <input type="submit" value="SEND">
+            </div>
+            </div>
+        </form>    
+    </div>
+</body>
+</html>

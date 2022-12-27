@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>signup page </title>
+    <style>
+        body{
+    padding: 0%;
+    margin: 0;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    /* background-color: rgb(204, 161, 109); */
+}
+.box-1{
+    width: 40%;
+    height: 70vh;
+    /* background-color: blue; */
+    float: left;
+    margin-left: 10%;
+    margin-top: 5%;
+    border: 2px solid black;
+    background-color: cadetblue;
+    
+}
+.box-1 .top{
+    width: 97%;
+    background-color: rgb(93, 126, 199);
+    line-height: 60px;
+    font-weight: 100;
+    letter-spacing: 2px;
+    padding-left: 15px ;
+    margin-left: 2px;
+    
+}
+.signup-box{
+    width: 100%;
+    height: 350px;
+    /* background-color: burlywood; */
+    padding: 15px;
+    box-sizing : border-box;
+}
+.formbox-1{
+    width: 100%;
+    height: 65px;
+    /* background-color: springgreen; */
+}
+.formbox-1 label{
+    /* background-color:yellow; */
+    display: block;
+    padding: 3px;
+    font-size: 1.2rem;
+}
+.formbox-1 input[type=text]{
+    /* border: 1px solid #000; */
+    width: 100%;
+    box-sizing: border-box;
+    height: 35px;
+    padding: 10px;
+    outline: none;
+    border-radius: 2px;
+}
+.formbox-1 input[type=password]{
+    width: 100%;
+    height: 35px;
+    box-sizing: border-box;
+    outline: none;
+    padding: 10px;
+    border-radius: 2px;
+    
+}
+.signup-box .check{
+    width: 100%;
+    height: 55px;
+    /* background-color: #0f0 */
+}
+.formbox-1 input[type=button]{
+    border: 2px solid #000;
+    background-color: rgb(95, 115, 184);
+    height: 40px;
+    width: 30%;
+    color: #fff;
+    cursor: pointer;
+    margin-top: 15px;
+    
+}
+.formbox-1 input[value]{
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+.formbox-1 input[type=button]:active{
+    background-color: rgb(19,77,75);
+    box-shadow: inset 0px 0px 5px (0,0,0,0.5);
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box-1">
+            <div class="top">
+                <h1>Sign up</h1>
+            </div>
+            <form action="./reg" method="post">
+                <div class="signup-box">
+                <div class=" formbox-1">
+                    <label for="User">Email</label>
+                    <input type="text" name="user" id="User">
+                </div>
+                <div class=" formbox-1">
+                    <label for="User">UserName</label>
+                    <input type="text" name="password" id="User">
+                </div>
+                <div class="formbox-1">
+                    <label for="Password">Password</label>
+                    <input type="password" name="" id="Password">
+                </div>
+                <div class="check">
+                    <p>By creating an account, you agree to our <a href=""> Terms </a> and have read and acknowledge the <a href="">Global Privacy Statement</a> .</p>
+                </div>
+                <div class="formbox-1">
+                    <input type="submit" value="Sign Up">
+                </div>
+            </form>
+        </div>
+    </div>
+            
+           
+</body>
+</html>
