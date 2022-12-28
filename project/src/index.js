@@ -9,7 +9,7 @@ const { urlencoded } = require('body-parser');
 const session = require("express-session");
 const mongosession = require("connect-mongodb-session")(session);
 
-const mongoURI = "mongodb://localhost:27017/loginuser";
+const mongoURI = "mongodb://127.0.0.1:27017/loginuser";
 
 
 app.use(bodyparser.urlencoded({extended:false}))
